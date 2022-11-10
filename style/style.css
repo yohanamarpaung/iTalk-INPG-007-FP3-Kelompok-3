@@ -111,6 +111,49 @@
     height: 566px;
     left: 760px;
     top: 70px;
-    /* object-fit: cover;
-    */
     }
+
+    /*about*/
+    .tab{
+        position: absolute;
+      width: 155px;
+      height: 50px;
+      left: 644px;
+      top: 675px;
+      
+      font-family: 'Basic';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 50px;
+      text-align: center;
+      
+      color: #020E35;
+      }
+      
+      .line{
+        position: absolute;
+      width: 100px;
+      height: 1px;
+      left: 670px;
+      top: 720px;
+      
+      border: 1px solid #E73587;
+      }
+      
+      .lorem{
+        position: absolute;
+      width: 823px;
+      height: 75px;
+      left: 308px;
+      top: 745px;
+      
+      font-family: 'Basic';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      
+      color: #2B2B2B;
+      }
