@@ -63,16 +63,6 @@
     /* filter: blur(0.6px); */
 }
 
-/* our valuable */
-
-
-/* media screen */
-@media screen and (max-width: 1024px) {
-    .navbar .navbar-collapse {
-        padding-top: 1.2rem !important;
-    }
-}
-
 /* banner */
 .banner {
     padding-top: 110px;
@@ -135,4 +125,12 @@
     font-size: 20px;
     font-weight: 400;
     width: 76%;
+}
+
+
+/* media screen */
+@media screen and (max-width: 1024px) {
+    .navbar .navbar-collapse {
+        padding-top: 1.2rem !important;
+    }
 }
