@@ -5,7 +5,63 @@ hide_on_scroll({
     nav_offset: 256,
 });
 
-
+// slider
+$(document).ready(function() {
+    $('.center').slick({
+        // centerMode: true,
+        // centerPadding: '60px',
+        slidesToShow: 3,
+        // arrows: true,
+        mobileFirst: true,
+        slidesTosScroll: 3,
+        infinite: true,
+        prevArrow: '<i class="fa-solid fa-angle-left left-arrow">',
+        nextArrow: '<i class="fa-solid fa-angle-right right-arrow">',
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: true,
+              // centerMode: true,
+              // centerPadding: '40px',
+              slidesTosScroll: 3,
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 628,
+            settings: {
+              arrows: true,
+              // centerMode: true,
+              // centerPadding: '40px',
+              slidesTosScroll: 2,
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: true,
+              // centerMode: true,
+              // centerPadding: '40px',
+              slidesTosScroll: 1,
+              slidesToShow: 1
+            }
+          },
+          {
+            breakpoint: 360,
+            settings: {
+              arrows: true,
+              // centerMode: true,
+              // centerPadding: '40px',
+              slidesTosScroll: 1,
+              slidesToShow: 1
+            }
+          }
+        ]
+    });
+})
 
 
 // newsletter swal
