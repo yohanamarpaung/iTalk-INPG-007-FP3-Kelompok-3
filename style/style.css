@@ -73,45 +73,45 @@
     }
 }
 
-/*banner*/
-.fn {
-    position: absolute;
-    width: 531px;
-    height: 366px;
-    left: 135px;
-    top: 195px;
-    
-    font-family: 'Basic';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 97px;
-    line-height: 122px;
-    
+/* banner */
+.banner {
+    padding-top: 110px;
+    padding-bottom: 90px;
+}
+
+.banner .banner-desc {
+    margin-top: 140px;
+}
+
+.banner .banner-desc h1 {
     color: #020E35;
-    
-    }
-    
-    .button{
-      background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
-      border: none;
-      color: white;
-      padding: 12px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin-top: 545px;
-      position: absolute;
-      left: 136px;
-    }
-    
-    .images{
-    position: absolute;
+    font-weight: 400;
+    font-size: 80px;
+}
+
+.banner .banner-desc button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.banner .banner-desc button:hover {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+}
+
+.banner .banner-desc button:active {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+    filter: brightness(95%);
+}
+
+.banner img {
     width: 740px;
     height: 566px;
-    left: 760px;
-    top: 70px;
-    }
+}
 
     /*about*/
     .tab{
