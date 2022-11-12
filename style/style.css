@@ -175,6 +175,15 @@
 }
 
 /* footer */
+.footer .container-fluid {
+    background-color: #020E35;
+}
+
+.footer h6 {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
 
 /* media screen */
 @media screen and (max-width: 1024px) {
