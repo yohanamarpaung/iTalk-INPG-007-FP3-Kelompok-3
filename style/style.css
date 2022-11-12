@@ -127,6 +127,54 @@
     width: 76%;
 }
 
+/* newsletter */
+.newsletter {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.newsletter h1 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #020E35;
+}
+
+.newsletter h2 {
+    font-size: 90px;
+    font-weight: 400;
+    color: #020E35;
+}
+
+.newsletter .hear {
+    color: #E73587;
+}
+
+.newsletter label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2C3241;
+}
+
+.newsletter button {
+    height: 55px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.newsletter button:hover {
+    color: white;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+}
+
+.newsletter button:active {
+    color: white !important;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    filter: brightness(95%);
+}
+
+/* footer */
 
 /* media screen */
 @media screen and (max-width: 1024px) {
