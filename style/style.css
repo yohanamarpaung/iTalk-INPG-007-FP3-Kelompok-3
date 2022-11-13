@@ -10,6 +10,10 @@
     font-family: Basic;
 }
 
+body {
+    background: linear-gradient(180deg, white 0%, white 56%, #020E35 30%, #020E35 100%);
+}
+
 /* navbar */
 .navbar {
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
@@ -66,7 +70,7 @@
 /* banner */
 .banner {
     padding-top: 110px;
-    padding-bottom: 90px;
+    padding-bottom: 100px;
 }
 
 .banner .banner-desc {
@@ -129,6 +133,7 @@
 
 /* our valuable */
 .service {
+    padding-top: 25px;
     padding-bottom: 120px;
 }
 
@@ -244,21 +249,23 @@
     font-size: 0;
     height: 10px;
     width: 10px;
-    background-color: rgba(0, 0, 0, 0.192);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     border: none;
 }
 
 .slick-dots .slick-active button {
-    background-color: #2A8BC6;
+    background-color: white;
     height: 15px;
     width: 15px;
 }
 
 /* newsletter */
 .newsletter {
-    margin-top: 120px;
-    margin-bottom: 80px;
+    background-color: white;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .newsletter h1 {
@@ -303,10 +310,6 @@
 }
 
 /* footer */
-.footer .container-fluid {
-    background-color: #020E35;
-}
-
 .footer h6 {
     color: white;
     font-size: 14px;
