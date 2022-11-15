@@ -93,5 +93,8 @@ btnSend.addEventListener('click', function (e) {
       showConfirmButton: false,
       timer: 1500
     })
+    getEmail.value = ''
+    getSubject.value = ''
+    getMessage.value = ''
   }
 })
