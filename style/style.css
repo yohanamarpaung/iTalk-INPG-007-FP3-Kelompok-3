@@ -165,6 +165,34 @@ body {
     width: 300px;
 }
 
+.modal-service img {
+    height: 255px;
+    width: 300px;
+}
+
+.modal-service p {
+    text-align: justify;
+    text-indent: 0.5in;
+}
+
+.modal-service .modal-footer button {
+    height: 38px;
+    width: 130px;
+    color: white !important;
+    font-weight: 400;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+}
+
+.modal-service .modal-footer button:hover {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 40%);
+}
+
+.modal-service .modal-footer button:active {
+    color: white !important;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 40%);
+    filter: brightness(95%);
+}
+
 .left-arrow {
     position: absolute;
     top: 45%;
