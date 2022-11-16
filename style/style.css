@@ -139,6 +139,8 @@ body {
 .service {
     padding-top: 25px;
     padding-bottom: 120px;
+
+    background: linear-gradient(180deg, white 57.5%, #020E35 42.5%);
 }
 
 .service h1 {
@@ -167,6 +169,44 @@ body {
 .service .card img {
     height: 255px;
     width: 300px;
+}
+
+.ourWork  {
+    
+    background-color: #020E35;
+}
+
+.ourWork .line {
+    width: 65%;
+    border-bottom: 2px solid #E73587;
+    border-radius: 4rem;
+}
+
+.ourWork button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.ourWork button:hover {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+}
+
+.ourWork button:active {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+    filter: brightness(95%);
+}
+
+.text-right{
+    text-align: right;
+}
+
+.read-more-content{
+    display: none !important;
 }
 
 .modal-service img {
