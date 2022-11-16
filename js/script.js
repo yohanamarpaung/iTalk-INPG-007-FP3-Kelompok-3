@@ -7,6 +7,12 @@ hide_on_scroll({
 
 // slider
 $(document).ready(function() {
+    $("#read-more").click((d)=>{
+      $(".hidden").toggleClass("read-more-content");
+      let currentVal = $(d.currentTarget).html() == "Read More" ? "Read Less" : "Read More"
+      $(d.currentTarget).html(currentVal)
+    })
+
     $('.center').slick({
         // centerMode: true,
         // centerPadding: '60px',
