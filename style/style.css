@@ -171,44 +171,6 @@ body {
     width: 300px;
 }
 
-.ourWork  {
-    
-    background-color: #020E35;
-}
-
-.ourWork .line {
-    width: 65%;
-    border-bottom: 2px solid #E73587;
-    border-radius: 4rem;
-}
-
-.ourWork button {
-    width: 140px;
-    height: 40px;
-    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.ourWork button:hover {
-    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
-    color: white !important;
-}
-
-.ourWork button:active {
-    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
-    color: white !important;
-    filter: brightness(95%);
-}
-
-.text-right{
-    text-align: right;
-}
-
-.read-more-content{
-    display: none !important;
-}
-
 .modal-service img {
     height: 255px;
     width: 300px;
@@ -332,6 +294,56 @@ body {
     width: 15px;
 }
 
+/* ourwork */
+.ourWork {
+    background-color: #020E35;
+}
+
+.ourWork .line {
+    width: 65%;
+    border-bottom: 4px solid #E73587;
+    border-radius: 4rem;
+}
+
+.ourWork h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.ourWork img {
+    width: 587px;
+    height: 390px;
+}
+
+.ourWork button {
+    width: 140px;
+    height: 40px;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+    font-size: 12px;
+    color: white !important;
+    font-weight: 400;
+}
+
+.ourWork button:hover {
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+}
+
+.ourWork button:active {
+    border: none;
+    background: linear-gradient(270deg, #8C32F0 0%, #E73587 30%);
+    color: white !important;
+    filter: brightness(95%);
+}
+
+.text-right{
+    text-align: right;
+}
+
+.read-more-content {
+    display: none !important;
+}
+
 /* newsletter */
 .newsletter {
     background-color: white;
@@ -399,5 +411,6 @@ body {
     transition: transform .5s;
 }
 .zoom:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
+    /* transform: translateX(15px); */
 }
