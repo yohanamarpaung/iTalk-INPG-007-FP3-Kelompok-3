@@ -69,7 +69,7 @@ body {
 
 /* banner */
 .banner {
-    padding-top: 110px;
+    padding-top: 80px;
     padding-bottom: 100px;
 }
 
@@ -108,6 +108,10 @@ body {
 }
 
 /* about */
+.about .row {
+    margin-left: -24px
+}
+
 .about .title-sec {
     width: 76%;
 }
