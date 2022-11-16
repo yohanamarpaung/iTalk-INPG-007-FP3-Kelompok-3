@@ -394,3 +394,10 @@ body {
         padding-top: 1.2rem !important;
     }
 }
+
+.zoom{
+    transition: transform .5s;
+}
+.zoom:hover {
+    transform: scale(1.2);
+}
