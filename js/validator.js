@@ -2,6 +2,8 @@
   'use strict';
 
   let emailSignUpListener = document.getElementById('email');
+  let getSubject = document.getElementById('subject');
+  let getMessages = document.getElementById('message');
   emailSignUpListener.onkeyup = (e) => {
     let validateEmail = emailSignUpListener.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
     let invalidComp = emailSignUpListener.nextElementSibling;
@@ -28,6 +30,8 @@
         event.preventDefault();
         if (!form.checkValidity()) {
           event.stopPropagation();
+          form.classList.add('was-validated');
+
         } else {
           const email = emailSignUpListener.value;
           Swal.fire({
@@ -37,9 +41,12 @@
             showConfirmButton: false,
             timer: 1500,
           });
+          emailSignUpListener.value = '';
+          getSubject.value = '';
+          getMessages.value = '';
+          form.classList.remove('was-validated');
         }
-
-        form.classList.add('was-validated');
+        // form.classList.add('was-validated');
       },
       false
     );
