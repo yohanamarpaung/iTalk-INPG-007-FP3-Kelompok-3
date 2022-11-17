@@ -107,6 +107,9 @@ body {
     height: 566px;
 }
 
+/* modal banner */
+
+
 /* about */
 .about .row {
     margin-left: -24px;
@@ -309,9 +312,28 @@ body {
     font-weight: 400;
 }
 
-.ourWork img {
-    width: 550px;
+.ourWork .img-content {
+    width: 557px;
     height: 390px;
+}
+
+.ourWork img {
+    width: 433px;
+    height: 390px;
+    position: relative;
+}
+
+.img-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom {
+    transition: transform .5s ease;
+}
+
+.img-content:hover  .zoom {
+    transform: scale(1.1);
 }
 
 .ourWork button {
@@ -404,12 +426,4 @@ body {
     .navbar .navbar-collapse {
         padding-top: 1.2rem !important;
     }
-}
-
-.zoom{
-    transition: transform .5s;
-}
-.zoom:hover {
-    transform: scale(1.1);
-    /* transform: translateX(15px); */
 }
