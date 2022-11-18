@@ -313,7 +313,7 @@ body {
 }
 
 .ourWork .img-content {
-    width: 550px;
+    max-width: 550px;
     height: 390px;
 }
 
@@ -332,7 +332,7 @@ body {
     transition: transform .5s ease;
 }
 
-.img-content:hover  .zoom {
+.img-content:hover .zoom {
     transform: scale(1.1);
 }
 
@@ -357,12 +357,27 @@ body {
     filter: brightness(95%);
 }
 
-.text-right{
+/* .text-right{
     text-align: right;
-}
+} */
 
 .read-more-content {
     display: none !important;
+}
+
+/* modal ourwork */
+.modal-brand-img .modal-lg {
+    max-width: 44rem !important;
+}
+
+#brand3 img {
+    max-width: 27rem !important;
+    height: 460px!important;
+}
+
+.modal-brand-img .modal-content img {
+    max-width: 100% !important;
+    height: 490px!important;
 }
 
 /* newsletter */
