@@ -10,16 +10,12 @@ hide_on_scroll({
 // slider
 $(document).ready(function() {
     $("#read-more").click((d)=>{
-      $(".hidden").toggleClass("read-more-content");
       let currentVal = $(d.currentTarget).html() == "Read More" ? "Read Less" : "Read More"
       $(d.currentTarget).html(currentVal)
     })
 
     $('.center').slick({
-        // centerMode: true,
-        // centerPadding: '60px',
         slidesToShow: 3,
-        // arrows: true,
         autoplay: true,
         autoplaySpeed: 2000,
         speed: 800,
@@ -53,7 +49,7 @@ $(document).ready(function() {
           {
             breakpoint: 480,
             settings: {
-              arrows: true,
+              arrows: false,
               // centerMode: true,
               // centerPadding: '40px',
               slidesTosScroll: 1,
@@ -63,7 +59,7 @@ $(document).ready(function() {
           {
             breakpoint: 360,
             settings: {
-              arrows: true,
+              arrows: false,
               // centerMode: true,
               // centerPadding: '40px',
               slidesTosScroll: 1,
