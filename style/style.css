@@ -108,7 +108,25 @@ body {
 }
 
 /* modal banner */
+.modal-home h1 {
+    font-weight: 400;
+    color: #020E35;
+}
 
+.modal-home .modal-lg {
+    height: 30rem !important;
+}
+
+.modal-home .carousel-inner img {
+    height: 30rem !important;
+    filter: brightness(60%);
+}
+
+
+
+.modal-home .carousel-inner img:hover {
+    filter: blur(2px) brightness(45%);
+}
 
 /* about */
 .about .row {
@@ -170,12 +188,12 @@ body {
 
 .service .card img {
     height: 255px;
-    width: 300px;
+    width: 100%;
 }
 
 .modal-service img {
     height: 255px;
-    width: 300px;
+    width: 100%;
 }
 
 .modal-service p {
@@ -372,12 +390,12 @@ body {
 
 #brand3 img {
     max-width: 27rem !important;
-    height: 460px!important;
+    height: 460px !important;
 }
 
 .modal-brand-img .modal-content img {
     max-width: 100% !important;
-    height: 490px!important;
+    height: 490px !important;
 }
 
 /* newsletter */
@@ -440,5 +458,79 @@ body {
 @media screen and (max-width: 1024px) {
     .navbar .navbar-collapse {
         padding-top: 1.2rem !important;
+    }
+
+    .modal-home .carousel-inner img {
+        height: 20rem !important;
+        /* filter: brightness(60%); */
+    }
+
+    .modal-home .d-none {
+        display: inline !important;
+    }
+
+    .modal-brand-img .modal-lg {
+        max-width: 100% !important;
+    }
+
+    #brand3 img {
+        max-width: 20rem !important;
+        height: 20rem !important;
+    }
+    
+    .modal-brand-img .modal-content img {
+        max-width: 100% !important;
+        height: 20rem !important;
+    }
+    
+    .left-arrow {
+        position: absolute;
+        top: 45%;
+        left: -8px;
+        font-size: 25px;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+        color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+        text-align: center;
+        padding-top: 10px;
+        padding-right: 2px;
+        cursor: pointer;
+    }
+    
+    .right-arrow {
+        position: absolute;
+        top: 45%;
+        right: -8px;
+        font-size: 25px;
+        z-index: 1;
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(270deg, #8C32F0 0%, #E73587 100%);
+        color: white;
+        border-radius: 50%;
+        border: 2px solid white;
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 2px;
+        cursor: pointer;
+    }
+
+    .slick-dots li {
+        margin: 0px 8px;
+    }
+
+    .ourWork .img-content {
+        max-width: 450px;
+        height: 290px;
+    }
+
+    .ourWork img {
+        width: 333px;
+        height: 290px;
+        position: relative;
     }
 }
