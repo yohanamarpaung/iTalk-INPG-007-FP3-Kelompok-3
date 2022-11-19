@@ -7,6 +7,9 @@ hide_on_scroll({
     nav_offset: 256,
 });
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
 // slider
 $(document).ready(function() {
     $("#read-more").click((d)=>{
@@ -49,7 +52,7 @@ $(document).ready(function() {
           {
             breakpoint: 480,
             settings: {
-              arrows: false,
+              arrows: true,
               // centerMode: true,
               // centerPadding: '40px',
               slidesTosScroll: 1,
@@ -59,7 +62,7 @@ $(document).ready(function() {
           {
             breakpoint: 360,
             settings: {
-              arrows: false,
+              arrows: true,
               // centerMode: true,
               // centerPadding: '40px',
               slidesTosScroll: 1,
