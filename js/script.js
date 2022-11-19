@@ -1,6 +1,5 @@
 AOS.init();
 
-// navonscroll
 hide_on_scroll({
     nav_id: 'demo1Navbar',
     hide_onscroll_mobile: true,
@@ -10,7 +9,6 @@ hide_on_scroll({
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
-// slider
 $(document).ready(function() {
     $("#read-more").click((d)=>{
       let currentVal = $(d.currentTarget).html() == "Read More" ? "Read Less" : "Read More"
@@ -33,8 +31,6 @@ $(document).ready(function() {
             breakpoint: 768,
             settings: {
               arrows: true,
-              // centerMode: true,
-              // centerPadding: '40px',
               slidesTosScroll: 3,
               slidesToShow: 3
             }
@@ -43,8 +39,6 @@ $(document).ready(function() {
             breakpoint: 628,
             settings: {
               arrows: true,
-              // centerMode: true,
-              // centerPadding: '40px',
               slidesTosScroll: 2,
               slidesToShow: 2
             }
@@ -53,8 +47,6 @@ $(document).ready(function() {
             breakpoint: 480,
             settings: {
               arrows: true,
-              // centerMode: true,
-              // centerPadding: '40px',
               slidesTosScroll: 1,
               slidesToShow: 1
             }
@@ -63,8 +55,6 @@ $(document).ready(function() {
             breakpoint: 360,
             settings: {
               arrows: true,
-              // centerMode: true,
-              // centerPadding: '40px',
               slidesTosScroll: 1,
               slidesToShow: 1
             }
@@ -72,35 +62,3 @@ $(document).ready(function() {
         ]
     });
 })
-
-// newsletter swal
-// var getEmail = document.getElementById('email');
-// var getSubject = document.getElementById('subject');
-// var getMessage = document.getElementById('message');
-// var btnSend = document.getElementById('btnSend');
-
-// btnSend.addEventListener('click', function (e) {
-//   e.preventDefault();
-//   var setEmail = getEmail.value;
-//   var setSubject = getSubject.value;
-//   var setMessage = getMessage.value;
-
-//   if((setEmail && setSubject && setMessage) === '') {
-//     Swal.fire({
-//       icon: 'error',
-//       title: 'Oops...',
-//       text: "Input field can't be empty!"
-//     });
-//   } else {
-//     Swal.fire({
-//       position: 'top-center',
-//       icon: 'success',
-//       title: 'Message sent successfully to ' + setEmail,
-//       showConfirmButton: false,
-//       timer: 1500
-//     })
-//     getEmail.value = ''
-//     getSubject.value = ''
-//     getMessage.value = ''
-//   }
-// })

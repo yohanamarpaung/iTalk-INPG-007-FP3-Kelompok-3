@@ -7,7 +7,6 @@
   emailSignUpListener.onkeyup = (e) => {
     let validateEmail = emailSignUpListener.value.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
     let invalidComp = emailSignUpListener.nextElementSibling;
-    console.log(invalidComp);
 
     let message = validateEmail ? '' : 'Email not valid!';
     if (message) {
@@ -19,10 +18,8 @@
     }
   };
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
   const forms = document.querySelectorAll('.subscribe-form');
 
-  // Loop over them and prevent submission
   Array.prototype.slice.call(forms).forEach(function (form) {
     form.addEventListener(
       'submit',
@@ -46,7 +43,6 @@
           getMessages.value = '';
           form.classList.remove('was-validated');
         }
-        // form.classList.add('was-validated');
       },
       false
     );
